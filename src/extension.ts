@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import { getDiff } from './git';
 import { parseDiff } from './diffParser';
+import { renderDiffToHtml } from './diffRenderer';
 
 export function activate(context: vscode.ExtensionContext) {
     const showDiff = vscode.commands.registerCommand('git-preflight.showDiff', async () => {
@@ -18,9 +19,16 @@ export function activate(context: vscode.ExtensionContext) {
             }
 
             const parsedDiff = parseDiff(diff);
-            const fileCount = parsedDiff.length;
-            const hunkCount = parsedDiff.reduce((sum, file) => sum + file.hunks.length, 0);
-            vscode.window.showInformationMessage(`Git Preflight: Parsed ${fileCount} file(s) with ${hunkCount} hunk(s)`);
+            const html = renderDiffToHtml(parsedDiff);
+
+            const panel = vscode.window.createWebviewPanel(
+                'gitPreflightDiff',
+                'Git Preflight',
+                vscode.ViewColumn.One,
+                { enableScripts: false }
+            );
+
+            panel.webview.html = html;
         } catch (error) {
             const message = error instanceof Error ? error.message : 'Unknown error';
             vscode.window.showErrorMessage(`Git Preflight: Failed to get diff - ${message}`);
