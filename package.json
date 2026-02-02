@@ -19,8 +19,8 @@
     "keybindings": [
       {
         "command": "git-preflight.showDiff",
-        "key": "ctrl+alt+d",
-        "mac": "cmd+alt+d"
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r"
       }
     ]
   },

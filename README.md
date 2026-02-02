@@ -8,7 +8,7 @@ Use this extension to review your uncommitted changes in a clean, readable diff 
 
 **Trigger the command:**
 - Command Palette: `Git Preflight: Show Diff`
-- Keyboard shortcut: `Ctrl+Alt+D` (Windows/Linux) or `Cmd+Alt+D` (macOS)
+- Keyboard shortcut: `Ctrl+Alt+R` (Windows/Linux) or `Cmd+Alt+R` (macOS)
 
 ## When to use
 
