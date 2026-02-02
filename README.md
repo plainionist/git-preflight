@@ -7,6 +7,7 @@ Simplifies the final self-review before committing changes to Git.
 Use this extension to review your uncommitted changes in a clean, readable diff view — ideal for a quick sanity check before committing.
 
 **Trigger the command:**
+
 - Command Palette: `Git Preflight: Show Diff`
 - Keyboard shortcut: `Ctrl+Alt+R` (Windows/Linux) or `Cmd+Alt+R` (macOS)
 
