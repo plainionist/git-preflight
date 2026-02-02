@@ -2,7 +2,7 @@
   "name": "git-preflight",
   "displayName": "Git Preflight",
   "description": "Pre-commit diff review tool",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.85.0"
   },
