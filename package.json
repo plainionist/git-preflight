@@ -3,8 +3,9 @@
   "displayName": "Git Preflight",
   "publisher": "plainionist",
   "description": "Pre-commit diff review tool",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "BSD-3-Clause",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/plainionist/git-preflight"

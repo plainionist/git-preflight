@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90d9"/>
+      <stop offset="100%" style="stop-color:#2d5a87"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="128" height="128" rx="16" fill="url(#bg)"/>
+  
+  <!-- Git branch circle top -->
+  <circle cx="36" cy="24" r="12" fill="none" stroke="#fff" stroke-width="6"/>
+  
+  <!-- Git branch line -->
+  <path d="M36 36 L36 76 Q36 96 56 96 L76 96" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Git branch circle bottom -->
+  <circle cx="92" cy="96" r="12" fill="none" stroke="#fff" stroke-width="6"/>
+  
+  <!-- Checkmark -->
+  <path d="M52 56 L68 72 L100 32" fill="none" stroke="#89d185" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
