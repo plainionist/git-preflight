@@ -2,7 +2,7 @@
   "name": "git-preflight",
   "displayName": "Git Preflight",
   "description": "Pre-commit diff review tool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -14,6 +14,13 @@
       {
         "command": "git-preflight.showDiff",
         "title": "Git Preflight: Show Diff"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "git-preflight.showDiff",
+        "key": "ctrl+alt+d",
+        "mac": "cmd+alt+d"
       }
     ]
   },
