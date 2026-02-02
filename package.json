@@ -1,12 +1,19 @@
 {
   "name": "git-preflight",
   "displayName": "Git Preflight",
+  "publisher": "plainionist",
   "description": "Pre-commit diff review tool",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plainionist/git-preflight"
+  },
+  "keywords": ["git", "diff", "review", "commit"],
   "engines": {
     "vscode": "^1.85.0"
   },
-  "categories": ["Other"],
+  "categories": ["SCM Providers"],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
