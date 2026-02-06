@@ -17,6 +17,8 @@ Simplifies the final self-review before committing changes to Git.
 - Command Palette: `Git Preflight: Show Diff`
 - Keyboard shortcut: `Ctrl+Alt+R` (Windows/Linux) or `Cmd+Alt+R` (macOS)
 
+![](docs/screenshot.png)
+
 ## When to use
 
 Run it right before you commit to catch accidental changes, debug leftovers, or forgotten TODOs.
